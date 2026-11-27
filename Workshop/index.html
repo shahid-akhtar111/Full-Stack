@@ -1,135 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-
-  <!-- EXERCISE 10 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Sarayu Gautam</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hamro Learning School</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="workshop1.css">
+  <link rel="icon"  href="Logo@.jpg">
 </head>
 <body>
 
-  <header class="site-header">
-    <nav>
-
-      <a href="#" class="logo">Sarayu <span>Gautam</span></a>
-
-      <ul class="nav-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+   <!-- Header -->
+  <header class="site-header" id="home">
+    <div class="container header-content">
+      <a class="logo" href="#home">Learning<span>School</span></a>
+      <p class="tagline">Learn today. Build tomorrow.</p>
+    </div>
   </header>
 
-  <main>
 
-    <div class="content">
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container nav-links">
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#resources">Resources</a>
+      <a href="#tutorials">Tutorials</a>
+      <a href="#announcements">Announcement</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-      <section class="hero">
-        <img src="images/hero.svg" alt="Abstract geometric composition">
-        <div class="hero-text">
-          <p class="eyebrow">Full stack / Kathmandu</p>
-          <h1>Sarayu Gautam</h1>
-          <p>I build small web tools that solve one problem properly, and
-             I teach other people how to build them too.</p>
-          <a href="#work" class="button">Selected work</a>
+
+  <main class="container page-layout">
+    
+    <div class="main-contain">
+
+      <!-- Welcome Section -->
+      <section class="welcome" id="welcom">
+        <div class="welcome-text">
+          <p>Your Learning Journey Started Form here</p>
+          <h1>Learn. Discover. Grow.</h1>
+          <p>Learning is a journey that brings us closer to our goals and aspirations. It is through learning that we acquire knowledge, develop skills, and grow as individuals.</p>
+          <a class="primary-button" href="#courses">Explore Courses</a>
+        </div>
+        <figure class="welcome-image">
+          <img src="https://images.pexels.com/photos/3184632/pexels-photo-3184632.jpeg?cs=srgb&dl=pexels-fauxels-3184632.jpg&fm=jpg" >
+          <figcaption>Group discussion is better when we learn together.</figcaption>
+        </figure>
+      </section>
+
+
+      <!-- Courses Section -->
+      <section class="course-section" id="courses">
+        <div class="section-heading">
+          <div>
+            <p>START LEARNING</p>
+            <h2>Our Popular Courses</h2>
+          </div>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <img src="https://img.freepik.com/premium-photo/modern-laptop-displaying-colorful-programming-code-with-blurred-lights-technology-workspace_1089554-16311.jpg">
+            <div class="card-body">
+              <span class="catagory">Programming</span>
+              <h3>Introduction to Programming</h3>
+              <p>Learn programming basic, variable, loops and conditions</p>
+              <a href="https://www.w3schools.com/programming/">Start Programming</a>
+            </div>
+          </article>
+
+
+          <article class="course-card">
+            <img src="https://awaraj.com/wp-content/uploads/2024/07/HTMLCSS.png">
+            <div class="card-body">
+              <span class="catagory">Web Development</span>
+              <h3>HTML and CSS</h3>
+              <p>Learn how to create and style attractive webpage.</p>
+              <a href="https://www.w3schools.com/html">Start Learning</a>
+            </div>
+          </article>
+
+
+          <article class="course-card">
+            <img src="https://teachersguide.net/wp-content/uploads/2024/11/Fundamentals-of-Computers-2-compressed.jpg">
+            <div class="card-body">
+              <span class="catagory">Machine Learning</span>
+              <h3>Technology of AI</h3>
+              <p>It allows systems to learn from data, recognise patterns and make decisions to solve complex problems.</p>
+              <a href="https://www.w3schools.com/ai/default.asp">Start Learning</a>
+            </div>
+          </article>
+
+
+          <article class="course-card">
+            <img src="https://www.weblineindia.com/wp-content/uploads/2021/10/Java-Framework.jpg">
+            <div class="card-body">
+              <span class="catagory">Object Oriented</span>
+              <h3>JAVA</h3>
+              <p>Java is a popular high-level,object-oriented programming language that was originally developed by Sun Microsystems and released in 1995. </p>
+              <a href="https://www.w3schools.com/java/java_getstarted.asp">Start Learning</a>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="gallery-section" id="work">
-        <h2>Selected work</h2>
 
-        <div class="gallery">
-
-          <article class="card feature">
-            <img src="images/card-1.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>01</span>PHP / MySQL</p>
-              <h3>Marks Ledger</h3>
-              <p>A gradebook that replaced fourteen spreadsheets. Handles
-                 four modules, six assessment points, and one very
-                 opinionated export format.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="images/card-2.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>02</span>JavaScript</p>
-              <h3>Route 27</h3>
-              <p>Bus timings for the route I actually take.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="images/card-3.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>03</span>PHP</p>
-              <h3>Load Shedding</h3>
-              <p>Area schedules, searchable, with no adverts on it.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="images/card-4.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>04</span>CSS</p>
-              <h3>Type Tester</h3>
-              <p>Devanagari and Latin side by side, at real sizes.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <img src="images/card-5.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>05</span>JavaScript</p>
-              <h3>Momo Index</h3>
-              <p>Every momo place near the college, ranked properly.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
-          </article>
-
+      <!-- Study resources -->
+      <section class="content-section" id="resources"> 
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">USEFUL MATERIALA</p>
+            <h2>Study Resources</h2>
+          </div>
         </div>
+        <div class="resource-list">
+          <article class="resource-item">
+            <div class="resource-icon"><i class="fa-solid fa-book"></i></div>
+            <div>
+              <h3>Programming Notes</h3>
+              <p>Basic notes to help you understand programming concepts.</p>
+            </div>
+            <a href="https://www.w3schools.com/">Open</a>
+          </article>
+
+          <article class="resource-item">
+            <div class="resource-icon"><i class="fa-solid fa-laptop"></i></div>
+            <div>
+              <h3>Web Development Guide</h3>
+              <p>Learn HTML, CSS and other web development technologies.</p>
+            </div>
+            <a href="https://www.w3schools.com/whatis/">Open</a>
+          </article>
+
+          <article class="resource-item">
+            <div class="resource-icon"><i class="fa-regular fa-pen-to-square"></i></div>
+            <div>
+              <h3>Practice Exercises</h3>
+              <p>Improve your skills by solving practical exercises.</p>
+            </div>
+            <a href="https://www.codechef.com/practice">Open</a>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- Multiemedia -->
+      <section class="content-section" id="tutorials">
+        <p class="eyebrow">WATCH AND LISTEN</p>
+        <h2>Learning Multimedia</h2>
+        <div class="media-grid">
+          <article class="media-card">
+            <h3>Vedio Tutorial</h3>
+            <p>Watch this video and learn HTML and CSS.</p>
+            <video width="300" controls>
+              <source src="html_vdo.mp4" type="video/mp4">
+            </video>
+          </article>
+
+
+          <article class="media-card">
+            <h3>Audio Learning</h3>
+            <p>Use the audio player to listen to a simple learning audio.</p>
+            <audio controls autoplay muted loop>
+              <source src="Audio1.mpeg" type="audio/mpeg">
+            </audio>
+            <p class="small-note">Audio Sample</p>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- Announcement -->
+      <section class="content-section" id="announcements">
+        <p  class="eyebrow">STAY UPDATED</p>
+        <h2>Latest Announcement</h2>
+        <article class="announcement">
+          <span class="announcement-date">26 NOV 2026</span>
+          <h3>Welcome to Hamro Learning School</h3>
+          <p>Explore the plateform and use thhe available learning materials to support your studies.</p>
+        </article>
+
+        <article class="announcement">
+          <span class="announcement-date">STUDY TIPS</span>
+          <h3>Make a study timetable</h3>
+          <p>Set small learning goals and practice regularly to improve your understanding.</p>
+        </article>
       </section>
 
     </div>
 
-    <aside id="about">
-      <h2>About</h2>
 
-      <figure>
-        <img src="images/profile.svg" alt="Abstract portrait mark">
-        <figcaption>Sarayu Gautam, Kathmandu.</figcaption>
-      </figure>
+    <!-- Sidebar / secondary information -->
+    <aside class="sidebar">
+      <section class="sidebar-box">
+        <h2>Quick Link</h2>
+        <ul>
+          <li> <a href="#courses">Browse Courses</a> </li>
+          <li> <a href="#resources">Study MAterials</a> </li>
+          <li> <a href="#tutorials">Vedio and Audio</a> </li>
+          <li> <a href="#announcements">Latest Updates</a> </li>
+        </ul>
+      </section>
 
-      <p>I teach full stack web development at Herald College Kathmandu
-         and build things in PHP and JavaScript the rest of the time.</p>
 
-      <h3 id="teaching">Teaching</h3>
-      <dl class="meta-list">
-        <dt>Module</dt>
-        <dd>5CS045 Full Stack Web Development</dd>
-        <dt>Prerequisite</dt>
-        <dd>Internet Software Architecture</dd>
-        <dt>Term</dt>
-        <dd>Twelve weeks, one project</dd>
-      </dl>
+      <section class="sidebar-box">
+        <h2>Learning Tips</h2>
+        <ol>
+          <li>Set a daily study goal.</li>
+          <li>Take short notes.</li>
+          <li>Practise what you learn.</li>
+          <li>Revise regularly.</li>
+        </ol>
+      </section>
+
+
+      <section class="sidebar-box quote-box">
+        <h2>Daily Motivation</h2>
+        <p>"The beautiful thing about learning is that nobody can take it away from you."</p>
+        <span>S. S. Akhtar</span>
+      </section>
     </aside>
-
   </main>
 
-  <footer id="contact">
-    <p>Herald College Kathmandu</p>
-    <p class="footer-mail"><a href="#">sarayu@example.com</a></p>
-    <small>Built for 5CS045 Full Stack Web Development, Week 1.</small>
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-content">
+      <div class="1">
+        <a class="logo footer-logo" href="#home">Learning<span>School</span></a>
+        <p>A smple plateform to support student learning.</p>
+      </div>
+      <div>
+        <h2>Useful Links</h2>
+        <a href="#courses">Courses</a>
+        <a href="#resources">Resources</a>
+        <a href="#tutorials">Tutorials</a>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>Email: hamrolearningschook.com</p>
+        <p>Student Learning Resource Plateform</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 HamroLearningSchool.</p>
   </footer>
 
 </body>
